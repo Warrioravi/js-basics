@@ -9,7 +9,7 @@
   z-index: 0;
 }
 body{
-    background-image:url(image.png);
+    background-image:url(/assets/background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% ;
@@ -31,7 +31,7 @@ body{
 }
 .menuItems{
     height: 4.5vh;
-    width: 75vw;
+    width: 73vw;
     
     display: flex;
     align-items: center;
@@ -75,15 +75,74 @@ body{
     border: rgb(133, 128, 128) 1px solid;
 }
 .weather{
-    
+   display: flex; 
   height: 4.5vh;
-  width: 10vw;
+  width: 12vw;
+
     
+}
+.weather:hover,.systemItems div:hover{
+  background-color: rgb(139, 137, 137,.4);
+}
+.weathericon{
+  height: 4.5vh;
+  width: 3vw;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+}
+.temperature{
+  height: 4.5vh;
+  width: 3vw;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.weathertype{
+  height: 4.5vh;
+  width: 6vw;
+  margin: 0px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-weight: 180;
+
 }
 .systemItems{
    
     height: 4.5vh;
     width: 15vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sys{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+  height: 4.5vh;
+  width: 2vw;
+ 
+}
+.calender{
+  height: 4.5vh;
+  width: 6vw;
+
+  text-align: center;
+  font-weight: 220;
+  font-size: .8rem;
+}
+.notifications{
+  height: 4.5vh;
+  width: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 /*    LOADER STYLING    */
