@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+.frame{
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
+    overflow: hidden;
+    
+}
+.frametop{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(44, 43, 43);
+    display: flex;
+    justify-content: space-between;
+}
+.framedetails{
+    height: 40px;
+    width: 10vw;
+    border: 1px solid white;
+   
+}
+.frameicon{
+
+}
+.framename{
+
+}
+.framecontrols{
+    height: 4vh;
+    width: 10vw;
+    
+    display: flex;
+
+}
+#gitframe{
+height:95vh;
+width: 100vw;
+
+}
+.frameminimize,.frameclose,.frameresize{
+    height: 4vh;
+    width: 33.33%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.frameminimize:hover,.frameresize:hover{
+background-color: rgb(168, 163, 163,.5);
+}
+.frameclose:hover{
+   background-color: red;
+}

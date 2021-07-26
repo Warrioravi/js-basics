@@ -7,6 +7,6 @@ document.querySelector(".continue").addEventListener('click',(e)=>{
         $(".userRegister").fadeOut("slow");
         setTimeout(() => {
             $(".bod").fadeOut("slow");
-        },8000);
+        },15000);
     })
 })
