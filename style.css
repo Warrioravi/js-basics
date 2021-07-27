@@ -28,14 +28,13 @@ body{
     display: flex;
     align-items: center;
     background-color:  rgba(12, 12,12);
-    z-index: 1;
+    z-index: 5;
     
 }
 .menuItems{
     height: 4.5vh;
     width: 73vw;
-    
-    display: flex;
+   display: flex;
     align-items: center;
 
 }
@@ -417,13 +416,15 @@ h1 {
     background-color:rgba(2, 2, 2, 0.7);
     position: fixed;
     left: 0px;
-    bottom: 4.5vh;
+    bottom:-80vh;
+   opacity: 0;
     display: flex;
-    transform: translateY(110%);
-    transition:.3s ease-in;
+    
+    transition:bottom .25s ease-in-out, opacity 0.25s ease-in-out;
 }
 .visible{
-  transform: translateY(0%);
+  bottom: 4.5vh;
+  opacity: 1;
 }
 .controlmenu{
   width: 3vw;
@@ -529,10 +530,9 @@ justify-content: center;
   height: 100vh;
   width: 100vw;
   border: 1px solid black;
+  overflow: hidden;
   position: fixed;
   top: 0px;
-  overflow: hidden;
-  z-index: 5;
   
 }
 .frametop{
@@ -541,25 +541,32 @@ justify-content: center;
   background-color: rgb(44, 43, 43);
   display: flex;
   justify-content: space-between;
- 
-
 }
 .framedetails{
   height: 40px;
   width: 10vw;
-  border: 1px solid white;
- 
+  display: flex;
 }
 .frameicon{
-
+  height: 40px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .framename{
+  color: white;
+  height: 40px;
+  width: calc(10vw - 45px);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 
 }
 .framecontrols{
   height: 4vh;
   width: 10vw;
-  
   display: flex;
 
 }
@@ -581,5 +588,5 @@ width: 100vw;
 background-color: rgb(168, 163, 163,.5);
 }
 .frameclose:hover{
- background-color: red;
+ background-color: rgb(167, 14, 14);
 }
