@@ -14,7 +14,7 @@
         <div class="desktopArea"></div>
         <div class="Taskbar">
             <div class="menuItems">
-                <div class="startButton">
+                <div class="startButton" id="start">
                     <img src="/assets/start.png" id="startImage" alt="">
                 </div>
                 <div class="searchBar">
@@ -24,7 +24,7 @@
                 <div class="task cortana"><img src="/assets/cortana.png" height="20px" alt="" srcset=""></div>
                 <div class="task taskView"><img src="/assets/taskview.png" height="25px" width="20px" alt="" srcset=""></div>
                 <div class="task fileexplorer"><img src="/assets/fileexplorer.png" height="20px" alt="" srcset=""></div>
-                <div class="task vscode"><img src="/assets/vscode.svg" height="25px" alt="" srcset=""></div>
+                <div class="task vscode" id="vscode"><img src="/assets/vscode.svg" height="25px" alt="" srcset=""></div>
                 <div class="task outlook"><img src="/assets/mail.png" height="25px" alt="" srcset=""></div>
             </div>
             <div class="weather">
@@ -36,7 +36,7 @@
             </div>
             <div class="systemItems">
                 <div class="hiddenicons sys"><img src="/assets/hidden.png" height="25px" alt="" srcset=""></div>
-                <div class="wifi sys"><img src="/assets/wifi.png" height="15px" alt="" srcset=""></div>
+                <div class="wifi sys"><img src="/assets/wifi.png" height="18px" alt="" srcset=""></div>
                 <div class="battery sys"><img src="/assets/battery.png" height="10px" alt="" srcset=""></div>
                 <div class="calender">00:29<br>27-07-2021</div>
                 <div class="notifications"><img src="/assets/notification.png" height="25px" alt="" srcset=""></div>
@@ -77,9 +77,113 @@
             </div>
         </div>
     </div>
-    <div class="frame">
-         <!-- ################## Weateher and News Slidebar################# -->
-
+    <!-- ################## Weateher and News Slidebar################# -->
+    <div class="startmenu">
+        <div class="controlmenu"> 
+            <div class="control-menu-start"><img src="/assets/cm-start.png" height="13px"  width="18" alt=" " srcset=""></div>
+            <div class="control-menu-items">
+                <div class="cm cm-user"><img src="/assets/user-buddy.png" height="21px" alt="" srcset=""></div>
+               
+                <div class="cm cm-health"><img src="/assets/health.png" height="21px" alt="" srcset=""></div>
+                <div class="cm cm-wirelessdisplay"><img src="/assets/wirelessdisplay.png" height="21px" alt="" srcset=""></div> 
+                <div class="cm cm-settings"><img src="/assets/settings.png" height="21px" alt="" srcset=""></div>
+                <div class="cm cm-power"><img src="/assets/power.png" height="21px" alt="" srcset=""></div>
+            </div>    
+        </div>
+        <div class="recentlyadded">
+            <div class="recentlyadded-heading">
+                Recently added
+            </div>
+            <div class="recently-added-list">
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/edge.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">Edge</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/excel.png" height="30px" alt="" srcset=""></div>
+                    <div class="listcontent">Excel</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/Calendar.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">Calender</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/vscode.svg" height="23px" alt="" srcset=""></div>
+                    <div class="listcontent">Vscode</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/weather.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">weather</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/news.png" height="65px" alt="" srcset=""></div>
+                    <div class="listcontent">News</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/notepad.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">Notepad</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/jira.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">Jira app</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/aviator.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">Aviator</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/Calendar.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">game2</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/Solitaire.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">Solitaire</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/health.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">health</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/calculator.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">calculator</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/whiteboard.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">whiteboard</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/Camera-icon.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">camera</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/settings.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">Settings</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/photos.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">WallPaper</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/music.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">Music</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/Mail.png" height="25px" alt="" srcset=""></div>
+                    <div class="listcontent">Outlook</div>
+                </div>
+                <div class="menulist">
+                    <div class="listicon"><img src="/assets/movies.png" height="55px" alt="" srcset=""></div>
+                    <div class="listcontent">Video Player</div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="tilescontainer">
+            <div class="productivity"></div>
+            <div class="play"></div>
+            <div class="explore"></div>
+            <div class="media"></div>
+        </div>
     </div>
     
     <script src="script.js"></script>

@@ -3,6 +3,7 @@
     margin: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+    scroll-behavior: smooth;
     
 }
 .wrapper{
@@ -26,7 +27,8 @@ body{
     width: 100vw;
     display: flex;
     align-items: center;
-    background-color:  rgba(12, 12,12,.5);
+    background-color:  rgba(12, 12,12);
+    z-index: 1;
     
 }
 .menuItems{
@@ -407,3 +409,177 @@ h1 {
     display: flex;
     justify-content: space-around;
   }
+
+  /* STARTMENUBAR-STYLING */
+  .startmenu{
+    height: 70vh;
+    width: 65vw;
+    background-color:rgba(2, 2, 2, 0.7);
+    position: fixed;
+    left: 0px;
+    bottom: 4.5vh;
+    display: flex;
+    transform: translateY(110%);
+    transition:.3s ease-in;
+}
+.visible{
+  transform: translateY(0%);
+}
+.controlmenu{
+  width: 3vw;
+  height: 100%;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.control-menu-start{
+  width: 100%;
+  height: 4.5vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.control-menu-items{
+  height: 22.5vh;
+  width: 100%;
+  
+}
+.control-menu-start:hover{
+  background-color: rgb(255, 255, 255,.4); 
+}
+
+.cm{
+  width: 100%;
+  height: 4.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cm:hover{
+   background-color: rgb(255, 255, 255,.4); 
+}
+.recentlyadded{
+  width: 16vw;
+  height: 100%;
+ 
+}
+.recentlyadded-heading{
+  height: 4.5vh;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  font-size: small;
+  font-weight: 120;
+  align-items: center;
+  
+}
+.recently-added-list{
+  height: 65.5vh;
+  width: 100%;
+  overflow: scroll;
+  
+}
+.recently-added-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.recently-added-list {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.menulist:hover{
+  background-color: rgb(255, 255, 255,.4); 
+}
+.menulist{
+  height: 4.5vh;
+  width: 100%;
+  margin-left: 5%;
+  text-align: left;
+  display: flex;
+  font-size: small;
+  font-weight: 120;
+  align-items: center;
+}
+.listicon{
+height: 100%;
+
+width: 2.5vw;  
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.tilescontainer{
+  width: 46vw;
+  height: 100%;
+  
+}
+
+.productivity{
+
+}
+
+
+
+/* frame styling */
+.frame{
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid black;
+  position: fixed;
+  top: 0px;
+  overflow: hidden;
+  z-index: 5;
+  
+}
+.frametop{
+  height: 40px;
+  width: 100%;
+  background-color: rgb(44, 43, 43);
+  display: flex;
+  justify-content: space-between;
+ 
+
+}
+.framedetails{
+  height: 40px;
+  width: 10vw;
+  border: 1px solid white;
+ 
+}
+.frameicon{
+
+}
+.framename{
+
+}
+.framecontrols{
+  height: 4vh;
+  width: 10vw;
+  
+  display: flex;
+
+}
+#gitframe{
+height:95vh;
+width: 100vw;
+
+}
+.frameminimize,.frameclose,.frameresize{
+  height: 4vh;
+  width: 33.33%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.frameminimize:hover,.frameresize:hover{
+background-color: rgb(168, 163, 163,.5);
+}
+.frameclose:hover{
+ background-color: red;
+}
