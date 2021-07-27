@@ -53,7 +53,7 @@ body{
     filter: invert(47%) sepia(45%) saturate(2415%) hue-rotate(168deg) brightness(96%) contrast(101%);
 }
 .startButton:hover{
-   background-color:rgb(255, 255, 255,.2);
+   background-color:rgb(255, 255, 255,.1);
 }
 .startButton{
     height: 4.5vh;
@@ -74,6 +74,16 @@ body{
 .searchBar:hover{
     border: rgb(133, 128, 128) 1px solid;
 }
+.task:hover{
+  background-color:rgb(255, 255, 255,.1);
+}
+.task{
+  height:4.5vh;
+  width: 3.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .weather{
    display: flex; 
   height: 4.5vh;
@@ -82,7 +92,7 @@ body{
     
 }
 .weather:hover,.systemItems div:hover{
-  background-color: rgb(139, 137, 137,.4);
+  background-color: rgb(255, 255, 255,.1);
 }
 .weathericon{
   height: 4.5vh;
@@ -142,6 +152,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 3px;
  
 }
 

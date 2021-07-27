@@ -10,3 +10,4 @@ document.querySelector(".continue").addEventListener('click',(e)=>{
         },10);
     })
 })
+
