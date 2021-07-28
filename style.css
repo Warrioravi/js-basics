@@ -5,6 +5,7 @@
     color: white;
     scroll-behavior: smooth;
     
+    
 }
 .wrapper{
   z-index: 0;
@@ -14,6 +15,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% ;
+    overflow: hidden;
 }
     
 .desktopArea{
@@ -339,10 +341,8 @@ h1 {
    top: 0;
    background-color: #0079d7;
    z-index: 2;
-   
-   
-  
-  }
+   }
+
   .heading{
     width: 100vw;
     height: 30vh;
@@ -397,7 +397,7 @@ h1 {
   .learnmore:hover,.continue:hover{
     background-color: white;
     color: black;
-    cursor: none;
+    cursor: default;
   }
   .buttons{
     position: Absolute;
@@ -522,17 +522,21 @@ justify-content: center;
 .productivity{
 
 }
+.selectedtask{
+  border-bottom:3px solid #6ca4cf ;
+  background-color:rgb(255, 255, 255,.1);
+}
 
 
 
 /* frame styling */
 .frame{
-  height: 100vh;
-  width: 100vw;
-  border: 1px solid black;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
   position: fixed;
+  overflow: hidden;
   top: 0px;
+  transition:height 0.25s,width 0.25s;
   
 }
 .frametop{
@@ -541,6 +545,7 @@ justify-content: center;
   background-color: rgb(44, 43, 43);
   display: flex;
   justify-content: space-between;
+ 
 }
 .framedetails{
   height: 40px;
@@ -571,14 +576,13 @@ justify-content: center;
 
 }
 #gitframe{
-height:95vh;
-width: 100vw;
+height:90.5vh;
+width: 100%;
 
 }
 .frameminimize,.frameclose,.frameresize{
   height: 4vh;
   width: 33.33%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -590,3 +594,59 @@ background-color: rgb(168, 163, 163,.5);
 .frameclose:hover{
  background-color: rgb(167, 14, 14);
 }
+.smallwindow{
+  position: absolute;
+  height: 80%;
+  width: 60%;
+ }
+   /* context styling */
+  #cntnr{
+    
+    position:fixed;
+    border:1px solid #B2B2B2;
+    width:200px;      
+    height: 245px;
+    background-color: rgb(56, 54, 54);
+    font-weight: 220;
+    font-size:12px;
+   }
+
+   #cntnr>div{
+     display: flex;
+     height:20px ;
+     justify-content: space-around;
+     margin: 3.3px;
+    
+
+
+   }
+   .context-icon{
+     height:20px;
+     width: 20px;
+     display: flex;
+       justify-content: left;
+       align-items: center;
+       margin-left: 8px;
+ 
+    }
+    .new {
+      border-top:1px solid rgb(104, 99, 99) ;
+    }
+    .context-name{
+       height: 20px;
+       width: 160px;
+     
+       display: flex;
+       justify-content: left;
+       align-items: center;
+    }
+    #cntnr div:hover{
+     background-color:  rgb(155, 144, 144);
+     cursor: default;
+    }
+    .paste{
+      border-top:1px solid rgb(104, 99, 99) ;
+    }
+  
+
+  
