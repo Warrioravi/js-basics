@@ -4,6 +4,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     scroll-behavior: smooth;
+    cur
     
     
 }
@@ -650,3 +651,49 @@ background-color: rgb(168, 163, 163,.5);
   
 
   
+/* News and Weather slidebar Styling  */
+.news-slidebar{
+  height: 70vh;
+  border:1px solid white;
+  width: 35vw;
+  position: fixed;
+  right: 50px;
+  bottom: -100vh;
+  background-color: rgb(59, 54, 54,.7);
+  transition: .2s ease-in-out;
+}
+.news-slidebar-visible{
+  bottom:4.5vh ;
+}
+/* Notification slidebar Styling  */
+.notification-sliderbar{
+  height: 95.5vh;
+  width: 100vw;
+  border:1px solid white;
+  width: 23vw;
+  position: fixed;
+  bottom:4.5vh;
+  right: -100%;
+  background-color: rgb(59, 54, 54,.7);
+  transition: .2s ease-in-out;
+}
+.notification-slidebar-visible{
+  right: 0;
+}
+
+/* calender slidebar Styling  */
+
+.notification-sliderbar{
+  height: 95.5vh;
+  width: 100vw;
+  border:1px solid white;
+  width: 23vw;
+  position: fixed;
+  bottom:4.5vh;
+  right: -100%;
+  background-color: rgb(59, 54, 54,.7);
+  transition: .2s ease-in-out;
+}
+.notification-slidebar-visible{
+  right: 0;
+}
