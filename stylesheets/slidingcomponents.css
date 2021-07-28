@@ -151,17 +151,43 @@ justify-content: center;
   
   /* calender slidebar Styling  */
   
-  .notification-sliderbar{
-    height: 95.5vh;
-    width: 100vw;
+  .calender-slidebar{
+    height: 75.5vh;
     border:1px solid white;
-    width: 23vw;
+    width: 22vw;
     position: fixed;
-    bottom:4.5vh;
-    right: -100%;
+    right: 0;
+    bottom:-100vh;
     background-color: rgb(59, 54, 54,.7);
     transition: .2s ease-in-out;
   }
-  .notification-slidebar-visible{
-    right: 0;
+  .calender-sliderbar-visible{
+    bottom:4.5vh;
+  }
+
+  .hidden-apps-slidebar{
+    height: 12vh;
+    border:1px solid white;
+    width: 7.5vw;
+    position: fixed;
+    right: 10.5vw;
+    bottom: -100%;
+    background-color: rgb(59, 54, 54,.7);
+    transition: .2s ease-in-out;  
+  }
+  .hidden-apps-slidebar-visible{
+    bottom:4.5vh;
+  }
+  .wifi-slidebar{
+    height: 12vh;
+    border:1px solid white;
+    width: 7.5vw;
+    position: fixed;
+    right: 10.5vw;
+    bottom:4.5vh;
+    background-color: rgb(59, 54, 54,.7);
+    transition: .2s ease-in-out;  
+  }
+  .wifi-slidebar-visible{
+    
   }
