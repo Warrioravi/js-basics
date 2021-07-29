@@ -15,7 +15,7 @@ document.querySelector(".continue").addEventListener('click',(e)=>{
         $(".userRegister").fadeOut("slow");
         setTimeout(() => {
             $(".bod").fadeOut("slow");
-        },100);
+        },10000);
     })
 })
 
@@ -34,14 +34,14 @@ function createiframe(name,url){
     let rv=document.createElement("div");
     rv.innerHTML=`<div class="frametop">
     <div class="framedetails">
-        <div class="frameicon"><img src="/assets/${name}.png" height="25px"></div>
+        <div class="frameicon"><img src="assets/${name}.png" height="25px"></div>
         <div class="framename">${name}</div>
     </div>
     <div class="framecontrols">
         <div class="frameminimize" style="padding-bottom: 10px;" >__</div>
        
-        <div class="frameresize"><img src="/assets/minimize.png" height="20px" width="20px" alt="" srcset=""></div>
-        <div class="frameclose"><img src="/assets/close.png" height="14px" alt="" srcset=""></div>
+        <div class="frameresize"><img src="assets/minimize.png" height="20px" width="20px" alt="" srcset=""></div>
+        <div class="frameclose"><img src="assets/close.png" height="14px" alt="" srcset=""></div>
     </div>
 </div>
 <div class="framecontent">
@@ -53,12 +53,12 @@ rv.querySelector(".frameclose").addEventListener('click',()=>{
 })
 rv.querySelector(".frameresize").addEventListener('click',(e)=>{
     rv.classList.toggle("smallwindow");
-    if(e.currentTarget.innerHTML==`<img src="/assets/minimize.png" height="20px" width="20px" alt="" srcset="">`){
-        e.currentTarget.innerHTML=`<img src="/assets/maximize.png" height="17px"  alt="" srcset="">`
+    if(e.currentTarget.innerHTML==`<img src="assets/minimize.png" height="20px" width="20px" alt="" srcset="">`){
+        e.currentTarget.innerHTML=`<img src="assets/maximize.png" height="17px"  alt="" srcset="">`
         dragElement(rv);
     }
     else{
-        e.currentTarget.innerHTML=`<img src="/assets/minimize.png" height="20px" width="20px" alt="" srcset="">`
+        e.currentTarget.innerHTML=`<img src="assets/minimize.png" height="20px" width="20px" alt="" srcset="">`
     }
 
     
