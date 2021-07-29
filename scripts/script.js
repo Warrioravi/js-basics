@@ -1,4 +1,10 @@
-
+// Using  tippyjs for tooltip
+tippy('.wifi', {
+    content: `Don't expect much! I'm an OS inside browser :D`,
+  });
+  tippy('.battery', {
+    content: `Battery? why you need to know that?:D`,
+  });  
 
 document.querySelector(".name").addEventListener('click',(e)=>{
     e.currentTarget.innerText="";
@@ -9,7 +15,7 @@ document.querySelector(".continue").addEventListener('click',(e)=>{
         $(".userRegister").fadeOut("slow");
         setTimeout(() => {
             $(".bod").fadeOut("slow");
-        },1);
+        },100);
     })
 })
 
@@ -29,7 +35,7 @@ function createiframe(name,url){
     rv.innerHTML=`<div class="frametop">
     <div class="framedetails">
         <div class="frameicon"><img src="/assets/${name}.png" height="25px"></div>
-        <div class="framename">Vscode</div>
+        <div class="framename">${name}</div>
     </div>
     <div class="framecontrols">
         <div class="frameminimize" style="padding-bottom: 10px;" >__</div>
@@ -111,7 +117,56 @@ $(document).bind("contextmenu",function(e){
     $(document).off("click");
     });
   }
+
+  //windows hover effect
+  document.querySelectorAll(".win-btn").forEach((b) => {
+    console.log(b);
+    b.onmouseleave = (e) => {
+      e.target.style.background = "rgba(155, 155, 155, 0.1)";
+      e.target.querySelector("img").style.background="transparent";
+      e.target.style.borderImage = null;
+    };
+  
+    b.addEventListener("mousemove", (e) => {
+      const rect = e.target.getBoundingClientRect();
+      const x = e.clientX - rect.left; //x position within the element.
+      const y = e.clientY - rect.top; //y position within the element.
+      e.target.style.background = `radial-gradient(circle at ${x}px ${y}px , rgba(255,255,255,0.2),rgba(255,255,255,0) )`;
+      e.target.style.borderImage = `radial-gradient(20% 75% at ${x}px ${y}px ,rgba(255,255,255,0.7),rgba(255,255,255,0.1) ) 1 / 1px / 0px stretch `;
+    });
+  });
+
+  //Event  handlers fro start menu tiles
+  $("#play-wb1").click(function () 
+  {
+    let newframe=createiframe("aviator","https://tympanus.net/Tutorials/TheAviator/");
+    $("body").append(newframe);
+
+  })
  
+ 
+ 
+  $("#play-wb2").click(function(){
+    let newframe=createiframe("triggerrally","https://codeartemis.github.io/TriggerRally/server/public/");
+    $("body").append(newframe);
+  })
+  $("#play-wb3").click(function(){
+    let newframe=createiframe("tictactoe","https://nullllpointeerrr.github.io/JavaScript-Tic-Tac-Toe/");
+    $("body").append(newframe);
+  })
+  $("#play-wb4").click(function(){
+    let newframe=createiframe("onoff","https://js13kgames.com/games/onoff/index.html");
+    $("body").append(newframe);
+  })
+  $("#play-wb5").click(function(){
+    let newframe=createiframe("everyonessky","https://js13kgames.com/games/everyones-sky/index.html");
+    $("body").append(newframe);
+  })
+  $("#play-wb6").click(function(){
+    let newframe=createiframe("hellorun","http://oatthegoat.co.nz/");
+    $("body").append(newframe);
+  })
+  
 
 
 

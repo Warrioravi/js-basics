@@ -4,7 +4,7 @@
   z-index: 0;
 }
 body{
-    background-image:url(/assets/background.png);
+    background-image:url(/assets/background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% ;
@@ -153,12 +153,13 @@ body{
 }
 /* frame styling */
 .frame{
-    height: 100%;
+    height: 95.5%;
     width: 100%;
     position: fixed;
     overflow: hidden;
     top: 0px;
     transition:height 0.25s,width 0.25s;
+    background-color: white;
     
   }
   .frametop{
@@ -198,7 +199,7 @@ body{
   
   }
   #gitframe{
-  height:90.5vh;
+  height:91.5vh;
   width: 100%;
   
   }
