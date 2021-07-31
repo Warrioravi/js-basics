@@ -21,6 +21,7 @@ document.querySelector(".continue").addEventListener('click',(e)=>{
 
 $("#start").click(function(){
      $(".startmenu")[0].classList.toggle('visible');
+     $(".controlmenu-slidebar")[0].classList.remove("controlmenu-slidebar-visible")
 })
 $("#vscode").click(function(){
     console.log("vs code clicked")
@@ -136,7 +137,7 @@ $(document).bind("contextmenu",function(e){
     });
   });
 
-  //Event  handlers fro start menu tiles
+  //Event  handlers for start menu tiles
   $("#play-wb1").click(function () 
   {
     let newframe=createiframe("aviator","https://tympanus.net/Tutorials/TheAviator/");
@@ -166,6 +167,35 @@ $(document).bind("contextmenu",function(e){
     let newframe=createiframe("hellorun","http://oatthegoat.co.nz/");
     $("body").append(newframe);
   })
+  //slider controllers
+
+  $(".controlmenu").click(function(){
+    $(".controlmenu-slidebar")[0].classList.toggle("controlmenu-slidebar-visible")
+  });
+
+  document.querySelector(".searchBar").addEventListener('click',()=>{
+    document.querySelector(".search-slidebar").classList.toggle("search-slidebar-visible");
+  })
+
+  // $(".searchBar")[0].click(function(){
+  //   console.log("searchbar clicked");
+  //   // $(".search-slidebar")[0].classList.toggle("search-slidebar-visible")
+  // })
+
+  // })
+  // $(".news-slidebar").click(function(){
+  //   $(".news-slidebar")[0].classList.toggle("news-slidebar-visible")
+
+  // })
+  // $(".notification-sliderbar")[0].click(function(){
+  //   $(this).classList.toggle("notification-slidebar-visible")
+
+  // })
+
+
+ 
+
+ 
   
 // var city="Delhi";
 
@@ -182,8 +212,3 @@ $(document).bind("contextmenu",function(e){
 // .catch(err => alert("Wrong city name!"));
 // }
 // get(city);
-  
-
-
-
-

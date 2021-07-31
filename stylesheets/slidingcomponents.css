@@ -18,7 +18,7 @@
 .controlmenu{
   width: 3vw;
   height: 100%;
- 
+  z-index: 5;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -63,6 +63,7 @@
   font-size: small;
   font-weight: 120;
   align-items: center;
+  padding-left:10px ;
   
 }
 .recently-added-list{
@@ -246,7 +247,8 @@ column-gap: 5px;
     position: fixed;
     right: 50px;
     bottom: -100vh;
-    background-color: rgb(59, 54, 54,.7);
+    background-color:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     transition: .2s ease-in-out;
   }
   .news-slidebar-visible{
@@ -261,7 +263,8 @@ column-gap: 5px;
     position: fixed;
     bottom:4.5vh;
     right: -100%;
-    background-color: rgb(59, 54, 54,.7);
+    background-color:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     transition: .2s ease-in-out;
   }
   .notification-slidebar-visible{
@@ -277,7 +280,8 @@ column-gap: 5px;
     position: fixed;
     right: 0;
     bottom:-100vh;
-    background-color: rgb(59, 54, 54,.7);
+    background-color:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     transition: .2s ease-in-out;
   }
   .calender-sliderbar-visible{
@@ -291,7 +295,8 @@ column-gap: 5px;
     position: fixed;
     right: 10.5vw;
     bottom: -100%;
-    background-color: rgb(59, 54, 54,.7);
+    background-color:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     transition: .2s ease-in-out;  
   }
   .hidden-apps-slidebar-visible{
@@ -304,9 +309,57 @@ column-gap: 5px;
     position: fixed;
     right: 0;
     bottom:-100vh;
-    background-color: rgb(59, 54, 54,.7);
+    background-color:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
     transition: .2s ease-in-out;  
   }
   .wifi-slidebar-visible{
     bottom:4.5vh;
   }
+
+  .search-slidebar{
+    height: 60vh;
+    border:1px solid white;
+    width: 45vw;
+    position: fixed;
+    left: 3vw;
+    bottom:-100vh;
+    background-color:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    transition: .2s ease-in-out;  
+  }
+  .search-slidebar-visible{
+    bottom: 4.5vh;
+  }
+
+
+  .controlmenu-slidebar{
+    position: fixed;
+    height: 75vh;
+    left: -100%;
+    bottom: 4.5vh;
+    width: 14vw;
+    background-color:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .2s ease-in-out; 
+    
+}
+.controlmenu-slidebar-visible{
+  left: 3vw;
+}
+.slide-control-menu-items{
+  height: 22.5vh;
+  width: 100%;
+  
+}
+
+.slide-control-menu-start,.slide-control-menu-items div {
+  width: 100%;
+  height: 4.5vh;
+  display: flex;
+  align-items: center;
+}
+
