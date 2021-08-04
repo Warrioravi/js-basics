@@ -31,16 +31,16 @@
             </div>
             <div class="weather">
                <div class="weathericon">
-                   <img src="http://openweathermap.org/img/wn/10d@2x.png" height="38px" width="50px" alt="">
+                   <img id="weather-taskbar-icon" src="http://openweathermap.org/img/wn/10d@2x.png" height="38px" width="50px" alt="">
                </div>
-               <div class="temperature">31°C</div>
-                <div class="weathertype"> Rain Showers</div>
+               <div id="taskbar-temperature" class="temperature">31°C</div>
+               <div id="taskbar-weathertype" class="weathertype"> Rain Showers</div>
             </div>
             <div class="systemItems">
                 <div class="hiddenicons sys"><img src="assets/hidden.png" height="25px" alt="" srcset=""></div>
                 <div class="wifi sys"><img src="assets/wifi.png" height="18px" alt="" srcset=""></div>
                 <div class="battery sys"><img src="assets/battery.png" height="10px" alt="" srcset=""></div>
-                <div class="calender">00:29<br>27-07-2021</div>
+                <div class="calender"></div>
                 <div class="notifications"><img src="assets/notification.png" height="25px" alt="" srcset=""></div>
                 
             </div>
@@ -50,7 +50,7 @@
 
 
     <!-- ################## LOADER ################# -->
-    <div class="bod">
+    <!-- <div class="bod">
         <div class="loaderwrapper">
             <div class="loader">
               <span class="pip-0"></span>
@@ -61,10 +61,10 @@
               <span class="pip-5"></span>
             </div>
           </div>
-    </div> 
+    </div>  -->
    
     <!-- ##################FIRST USER PAGE################# -->
-    <div class="userRegister">
+    <!-- <div class="userRegister">
         <div class="heading">Who's going to use this PC?</div>
         <div class="logo">
             <div><img src="assets/user.png"  height="120px"alt="" srcset=""></div>
@@ -78,7 +78,7 @@
                 <div class="continue">Continue</div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- ##################START MENU################# -->
     <div class="startmenu">
         <div class="controlmenu"> 
@@ -286,17 +286,85 @@
    </div>
    <!-- ##################### Weather and News Popup Slidebar####################### -->
     
-   <div class="news-slidebar ">
+   <div class="news-slidebar news-slidebar-visible">
+       <div class="slidebar-weather">
+           <div class="location-name" contenteditable="true">Delhi</div>
+           <div class="location-weather">
+               <div class="lw-image">
+                   <img src="" id="weather-icon" alt="">
+               </div>
+               <div class="lw-temp"></div>
+               <div class="lw-description"></div>
+           </div>
+           <div class="full-forecast">
+               See full forecast
+           </div>
+       </div> 
+       <div class="slidebar-news-tile">
+           <div class="news-description"></div>
+       </div>
+       <div class="slidebar-news-tile">
+        <div class="news-description"></div>
+       </div>
+       <div class="slidebar-news-tile">
+        <div class="news-description"></div>
+       </div>
+       <div class="slidebar-news-tile">
+        <div class="news-description"></div>
+       </div>
+       <div class="slidebar-news-tile">
+        <div class="news-description"></div>
+       </div>
    </div>
 
 
     <!-- ##################### Notifications Slidebar####################### -->
     <div class="notification-sliderbar">
+        <div class="no-notifications">No new notifications</div>
+        <div class="notification-options">
+            <div>Connect</div>
+            <div>Network</div>
+            <div>Mobile hotspot</div>
+            <div>All settings</div>
+            <div>Airplane mode</div>
+            <div>Locations</div>
+            <div>Alarms only</div>
+            <div>Battery saver</div>
+            <div>Night light</div>
+            <div>Not connected</div>
+            <div>Vpn</div>
+            <div>Project</div>
+            <div>Sharing</div>
+            <div>Health</div>
+            <div>Tablet mode</div>
+        </div>
+        <div class="brightnes-control">
+            <input type="range" id="range" min="50" max="200" value="100">
+        </div>
     </div>
     
     <!-- ##################### Calender Slidebar####################### -->
-    <div class="calender-slidebar">
-
+    <div class="calender-slidebar ">
+        <div class="calendar">
+            <div class="month">
+              <i class="fas fa-angle-left prev"></i>
+              <div class="date">
+                <h1></h1>
+                <p></p>
+              </div>
+              <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="weekdays">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div class="days"></div>
+          </div>
     </div>
     <!-- ##################### hidden apps slidebar####################### -->
     <div class="hidden-apps-slidebar">
@@ -304,11 +372,104 @@
     </div>
      <!-- ##################### search slidebar####################### -->
     <div class="search-slidebar">
+      <div class="search-apps-top">
+          <div class="sat-options">
+              <div class="sat-options-left">
+                  <div id="sat-all">All</div>
+                  <div>Apps</div>
+                  <div>Documents</div>
+                  <div>Web</div>
+                  <div>More</div>
+              </div>
+              <div class="sat-options-right">
+                  <img src="assets/feedback.png " height="60%" alt="" srcset="">
+              </div>
+          </div>
+          <div class="sat-tiles">
+              <div id="sattilename" >Top apps</div>
 
+              <div class="top-apps-tiles">
+                  <div class="top-edge">
+                      <div class="top-image"><img src="assets/edge.png" height="25px" alt="" srcset=""></div>
+                      <div class="top-name">Edge</div>
+                  </div>
+                  <div class="top-fileexplorer">
+                    <div class="top-image"><img src="assets/fileexplorer.png" height="25px" alt="" srcset=""></div>
+                    <div class="top-name">File Explorer</div>
+                  </div>
+                  <div class="top-vscode">
+                    <div class="top-image"><img src="assets/vscode.png" height="25px" alt="" srcset=""></div>
+                    <div class="top-name">VsCode</div>
+                  </div>
+                  <div class="top-camera">
+                    <div class="top-image"><img src="assets/camera.png" height="25px" alt="" srcset=""></div>
+                    <div class="top-name">Camera</div>
+                  </div>
+                  <div class="top-execel">
+                    <div class="top-image"><img src="assets/excel.png" height="25px" alt="" srcset=""></div>
+                    <div class="top-name">Excel</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="search-body">
+          <div class="search-body-head">Quick searches</div>
+           <div class="quick-search-wrapper">
+                
+               <div class="quick-weather">
+                <div class="qs-icon"></div>
+                    Weather
+                </div>
+
+               <hr width="95%" />
+               
+               <div class="quick-news"> 
+                <div class="qs-icon"></div> News
+               </div>
+
+               <hr width="95%" />
+
+               <div class="quick-corona">
+                   <div class="qs-icon"></div>  Corona Trends
+               </div>
+           </div>
+
+
+      </div>
     </div>
+    <!-- ##################### WIFI SLIDEBAR ########################## -->
     <div class="wifi-slidebar">
+       <div class="networks">
+        <div class="wifi-networks-connected">
+            <div>
+                <img src="assets/wifi.png" height="30px" style="margin-right:5px  ;" alt="" srcset="">
+                Paisa he paisa hoga $$<br>Connected
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="wifi-networks">
+            <img src="assets/wifi.png" height="30px" style="margin-right:5px  ;" alt="" srcset="">
+            Laxmi chitfund
+        </div>
+        <div class="wifi-networks">
+            <img src="assets/wifi.png" height="30px" style="margin-right:5px  ;" alt="" srcset="">
+            khopdi tod saale ka
+        </div>
+        <div class="wifi-networks">
+            <img src="assets/wifi.png" height="30px" style="margin-right:5px  ;" alt="" srcset="">
+            Ab maza ayega na bhidu
+        </div>
+       </div>
+       <div class="network-controls">
+           <div></div>
+           <div></div>
+           <div></div>
+       </div>
+
         
     </div>
+    <!-- ##################### CONTROL-MENU SLIDEBAR ########################## -->
     <div class="controlmenu-slidebar ">
              <div class="slide-control-menu-start">START</div>
             <div class="slide-control-menu-items">

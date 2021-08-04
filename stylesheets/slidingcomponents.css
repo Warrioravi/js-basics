@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: .2s ease-in-out;
 }
 .control-menu-start{
   width: 100%;
@@ -30,10 +31,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .2s ease-in-out;
 }
 .control-menu-items{
   height: 22.5vh;
   width: 100%;
+  transition: .2s ease-in-out;
   
 }
 .control-menu-start:hover{
@@ -46,6 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .2s ease-in-out;
 }
 .cm:hover{
    background-color: rgb(255, 255, 255,.4); 
@@ -53,6 +57,7 @@
 .recentlyadded{
   width: 16vw;
   height: 100%;
+  transition: .2s ease-in-out;
  
 }
 .recentlyadded-heading{
@@ -64,12 +69,14 @@
   font-weight: 120;
   align-items: center;
   padding-left:10px ;
+  transition: .2s ease-in-out;
   
 }
 .recently-added-list{
   height: 70.5vh;
   width: 100%;
   overflow: scroll;
+  transition: .2s ease-in-out;
   
 }
 .recently-added-list::-webkit-scrollbar {
@@ -94,6 +101,7 @@
   font-size: small;
   font-weight: 120;
   align-items: center;
+  transition: .2s ease-in-out;
 }
 .listicon{
 height: 100%;
@@ -102,6 +110,7 @@ width: 2.5vw;
 display: flex;
 align-items: center;
 justify-content: center;
+transition: .2s ease-in-out;
 
 }
 .tilescontainer{
@@ -109,6 +118,7 @@ justify-content: center;
   height: 100%;
   display: flex;
   justify-content: space-evenly; 
+  transition: .2s ease-in-out;
 }
 .col1,.col2{
     width: 48%;
@@ -121,6 +131,7 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .2s ease-in-out;
 }
 
 .win-btn:hover{
@@ -131,14 +142,17 @@ justify-content: center;
 #prod-wb2{
  grid-column-start:2;
  grid-column-end:4 ;
+ transition: .2s ease-in-out;
 }
 #exp-wb1,#exp-wb2,#exp-wb3{
  grid-column-start: span 2;
  grid-row-start: span 2;
+ transition: .2s ease-in-out;
 }
 #exp-wb4{
   grid-column-start: span 4;
   grid-row-start: span 2;
+  transition: .2s ease-in-out;
 }
 
 
@@ -147,12 +161,13 @@ justify-content: center;
 .productivity-wrapper{
     width: 100%;
     height: 40%;
+    transition: .2s ease-in-out;
 }
 .wrapper-heading{
   width: 100%;
   height: 4.5vh;
   padding-left: 5px;
-  
+  transition: .2s ease-in-out;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -162,32 +177,30 @@ justify-content: center;
 .productivity{
   width: 100%;
   height: calc(100% - 4.5vh);
- 
+  transition: .2s ease-in-out;
   display: grid;
   grid-template-rows: repeat(2,1fr);
   grid-template-columns: repeat(3,1fr);
   padding: 5px;
   row-gap: 5px;
   column-gap: 5px;
+  transition: .2s ease-in-out;
 }
 .explore-wrapper{
   width: 100%;
   height: 60%;
-  
- 
-
 }
 
 .explore{
 width: 100%;
 height: calc(100% - 4.5vh);
-
 display: grid;
 grid-template-rows: repeat(6,1fr);
 grid-template-columns: repeat(6,1fr);
 padding: 5px;
 row-gap: 5px;
 column-gap: 5px;
+transition: .2s ease-in-out;
 }
 
 
@@ -200,6 +213,7 @@ column-gap: 5px;
 .play-wrapper{
   width: 100%;
   height: 55%;
+  transition: .2s ease-in-out;
 }
 .play{
   width: 100%;
@@ -210,9 +224,11 @@ column-gap: 5px;
   padding: 5px;
   row-gap: 5px;
   column-gap: 5px;
+  transition: .2s ease-in-out;
 }
 #play-wb1,#play-wb6{
   grid-column-start: span 2;
+  transition: .2s ease-in-out;
 }
 
 
@@ -224,6 +240,7 @@ column-gap: 5px;
 .media-wrapper{
   width: 100%;
   height: 45%;
+  transition: .2s ease-in-out;
 }
 .media{
   width: 100%;
@@ -234,6 +251,7 @@ column-gap: 5px;
   padding: 5px;
   row-gap: 5px;
   column-gap: 5px;
+  transition: .2s ease-in-out;
 }
 
 
@@ -241,8 +259,7 @@ column-gap: 5px;
 /* News and Weather slidebar Styling  */
 
 .news-slidebar{
-    height: 70vh;
-    border:1px solid white;
+    height: 60vh;
     width: 35vw;
     position: fixed;
     right: 50px;
@@ -250,32 +267,149 @@ column-gap: 5px;
     background-color:rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     transition: .2s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    padding:20px;
+    
+
+ 
   }
+  .slidebar-weather{
+    background-color: #151616;
+    border: 1px grey;
+  }
+
+ .slidebar-weather,.slidebar-news-tile{
+  
+   border-radius: 3%;
+   }
+ .slidebar-news-tile:hover{
+  opacity: 0.5;
+ }
+ .slidebar-news-tile{
+   display: flex;
+   align-items: flex-end;
+   font-size: 12px;
+   text-align:center;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .slidebar-news-tile>div{
+   background-color: rgba(17, 16, 16, 0.8);
+   backdrop-filter: blur(5px);
+ }
+ .location-name{
+   height: 25%;
+   width: 100%;
+  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   outline: none;
+ }
+ .location-weather{
+  height: 55%;
+  width: 100%;
+  
+  display: flex;
+
+ }
+ .location-weather>div{
+   height: 100%;
+   
+   width: 33%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: x-large;
+ }
+ .full-forecast{
+  height: 20%;
+  width: 100%;
+ 
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .full-forecast:hover{
+    background-color: rgb(230, 212, 212,.3) ;
+ }
+
   .news-slidebar-visible{
     bottom:4.5vh ;
   }
+
+
   /* Notification slidebar Styling  */
   .notification-sliderbar{
     height: 95.5vh;
     width: 100vw;
-    border:1px solid white;
+    
     width: 23vw;
     position: fixed;
     bottom:4.5vh;
     right: -100%;
-    background-color:rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
+    background-color:rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(50px);
     transition: .2s ease-in-out;
   }
   .notification-slidebar-visible{
     right: 0;
+  }
+  .no-notifications{
+    height: 60%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .notification-options{
+    height: 30%;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 3px;
+    column-gap: 3px;
+    padding: 10px;
+    color: white;
+    transition: .2s ease-in-out;
+   
+  
+
+  }
+  .notification-options>div{
+    background-color: rgb(39, 35, 35,.8);
+    font-size: 11px !important;
+    padding: 5px;
+  }
+  .notification-options>div:hover{
+    background-color: rgb(49, 95, 182);
+  }
+  .brightnes-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+  }
+  #range{
+    width: 80%;
+    -webkit-appearance: none;
+    background: #0a85ff;
+    height: 3px;
+    outline: none;
   }
   
   /* calender slidebar Styling  */
   
   .calender-slidebar{
     height: 75.5vh;
-    border:1px solid white;
     width: 22vw;
     position: fixed;
     right: 0;
@@ -284,7 +418,7 @@ column-gap: 5px;
     backdrop-filter: blur(10px);
     transition: .2s ease-in-out;
   }
-  .calender-sliderbar-visible{
+  .calender-slidebar-visible{
     bottom:4.5vh;
   }
 
@@ -316,21 +450,157 @@ column-gap: 5px;
   .wifi-slidebar-visible{
     bottom:4.5vh;
   }
+  .networks{
+    height: 88%;
+    border: 1px solid;
+    align-items: center;
+  }
+  .wifi-networks-connected{
+    background-color: rgb(1, 97, 153);
+    height: 30%;
+    border: 1px solid;
+    display: grid;
+   
+    grid-template-rows: repeat(3, 1fr);
+    
+  }
+  .wifi-networks-connected>div{
+    border: 1px solid;
+    align-items: center;
+    
+  }
+  .wifi-networks{
+    height: 15%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+  }
+
+  .network-controls{
+    height: 12%;
+    border: 1px solid;
+
+  }
+ 
+
+  /* SEARCH SLIDERBAR STYLING */
 
   .search-slidebar{
     height: 60vh;
-    border:1px solid white;
     width: 45vw;
     position: fixed;
     left: 3vw;
     bottom:-100vh;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(24, 23, 23, 0.5);
     backdrop-filter: blur(10px);
     transition: .2s ease-in-out;  
   }
   .search-slidebar-visible{
     bottom: 4.5vh;
   }
+  .search-apps-top{
+    height: 35%;
+    width: 100%;
+    
+  }
+  .sat-options{
+    height: 25%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+  }
+  .sat-options-left{
+    height: 100%;
+    width: 45%;
+    
+    display: flex;
+    font-size: 12px;
+    
+  }
+
+  .sat-options-left div{
+    height: 100%;
+    width:fit-content;
+    padding: 10px;
+   
+  }
+  #sat-all{
+    border-bottom: 4px solid rgb(17, 150, 212);
+  }
+  .sat-options-right{
+    height: 100%;
+    width: 8%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sat-tiles{
+    height: 75%;
+  }
+  #sattilename{
+    height: 20%;
+   
+    padding-left: 10px;
+
+  }
+  .top-apps-tiles{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+  }
+  .top-apps-tiles>div{
+    height: 80%;
+    width:18%;
+    background-color: #1d1e1f;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 200 !important;
+   }
+ 
+ .search-body{
+    height: 65%;
+    width: 100%;
+    
+  }
+  .search-body-head{
+    height: 8%;
+    padding-left: 10px;
+    
+  }
+  .quick-search-wrapper{
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+  }
+  .quick-search-wrapper>div{
+     
+    height: 18%;
+    width: 95%;
+    border-radius: 5px;
+    margin: 3px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+     
+  }
+  .qs-icon{
+    height: 100%;
+    width: 10%;
+    border: 1px solid white;
+  }
+     /* CONTROL MENU STYLING */
 
 
   .controlmenu-slidebar{
@@ -347,6 +617,9 @@ column-gap: 5px;
     transition: .2s ease-in-out; 
     
 }
+hr{
+  color: gray;
+}
 .controlmenu-slidebar-visible{
   left: 3vw;
 }
@@ -361,5 +634,93 @@ column-gap: 5px;
   height: 4.5vh;
   display: flex;
   align-items: center;
+}
+
+/* calender styling */
+.calendar {
+  width: 100%;
+  height: 100%;
+  background-color:rgba(9, 10, 10, 0.7);
+}
+
+.month {
+  width: 100%;
+  height: 12rem;
+  background-color: #1e1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 15px;
+}
+
+.weekdays {
+  width: 100%;
+  height: 3rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1rem;
+
+  width: calc(100% / 7);
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #262626;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #1684ce;
 }
 
