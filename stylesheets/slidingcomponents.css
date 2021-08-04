@@ -380,10 +380,7 @@ transition: .2s ease-in-out;
     padding: 10px;
     color: white;
     transition: .2s ease-in-out;
-   
-  
-
-  }
+   }
   .notification-options>div{
     background-color: rgb(39, 35, 35,.8);
     font-size: 11px !important;
